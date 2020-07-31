@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #dedede;
+    background: #f8ffff;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -30,32 +30,32 @@ body {
     float: left;
   }
 
-  .celeste {
-    background: #22a6b3;
+  .azul{
+    background: #003366;
   }
 
-  .celeste.light {
-    background: #7ed6df;
+  .azul.light {
+    background: #0051ff;
   }
 
-  .violeta {
-    background: #be2edd;
+  .amarillo {
+    background: #ff8800;
   }
 
-  .violeta.light {
-    background: #e056fd;
+  .amarillo.light {
+    background: #f3ab58;
   }
 
-  .naranja {
-    background: #f0932b;
+  .rojo {
+    background: #a00404;
   }
 
-  .naranja.light {
-    background: #ffbe76;
+  .rojo.light {
+    background: #ff0037;
   }
 
   .verde {
-    background: #6ab04c;
+    background: #2d8d04;
   }
 
   .verde.light {
@@ -76,4 +76,7 @@ body {
   .hide {
     display: none;
 
+  }
+  *{
+    font-family: "Comic Sans MS", cursive, sans-serif;
   }
