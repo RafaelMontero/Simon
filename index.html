@@ -2,17 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Dice</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   </head>
-  <body>
-    <div class="gameboard">
-      <div id="azul" class="color azul left" data-color="azul"></div>
-      <div id="amarillo" class="color amarillo right" data-color="amarillo"></div>
-      <div id="rojo" class="color rojo left" data-color="rojo"></div>
-      <div id="verde" class="color verde right" data-color="verde"></div>
-      <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+  <body class="body" >
+    <div align="center" style="align-content: center;" class="gameboard" >
+      
+      <div class="header">
+        <button id="btnEmpezar" class="btn-start"  onclick="empezarJuego()"><img  src="img/boton.png" class="btn-start" ></button>
+      </div>
+
+      <table  class="divi">
+        <td align="center" class="respon" >
+          <div  st id="rojo" class="color rojo " data-color="rojo"></div>
+          <div id="azul" class="color azul " data-color="azul"></div>
+          <div id="verde" class="color verde " data-color="verde"></div>
+        </td>
+        <td align="center" class="respom" >
+          <div id="negro" class="color negro " data-color="negro"></div>
+          <div id="amarillo" class="color amarillo " data-color="amarillo"></div>
+          <div id="naranja" class="color naranja " data-color="naranja"></div>
+        </td>
+        <td align="center" class="respon" >
+          <div id="gris" class="color gris " data-color="gris"></div>
+          <div id="morado" class="color morado " data-color="morado"></div>
+          <div id="oro" class="color oro " data-color="oro"></div>
+        </td>
+        
+    </table>
     </div>
     <script type="text/javascript" src="class.js"></script>
   </body>

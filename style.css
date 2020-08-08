@@ -1,25 +1,40 @@
-body {
-    margin: 0;
-    background: #f8ffff;
-    display: flex;
-    align-items: center;
-    height: 100vh;
+.header{
+  margin-top: 0px;
+  height: 250px;
+  background-image: url(img/boton2.png);
+  background-size: 188px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 15px;
+}
+
+.respon{
+  width: 33%;
+}
+
+.divi{
+  width: 250px;
+}
+
+.body {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b3b3c9, #ffffff, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #003366, #777777, #003366); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .gameboard {
-    height: 100vh;
-    width: 100vh;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 60vh;
-    max-width: 60vh;
+    width: 100%;
   }
 
   .color {
-    width: 50%;
-    height: 50%;
-    display: inline-block;
+    width: 87px; 
+    height: 87px; 
+    border: 2px solid #000; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   .left {
@@ -30,53 +45,77 @@ body {
     float: left;
   }
 
-  .azul{
+  .rojo { 
+    background: #b81200;
+  }
+  .rojo.light { 
+    background: #ff6150;
+  }
+  .azul { 
     background: #003366;
   }
-
-  .azul.light {
-    background: #0051ff;
+  .azul.light { 
+    background: #3498DB;
   }
-
-  .amarillo {
-    background: #ff8800;
+  .verde { 
+    background:  #008a3c;
   }
-
-  .amarillo.light {
-    background: #f3ab58;
+  .verde.light { 
+    background: #08ff73;
   }
-
-  .rojo {
-    background: #a00404;
+  .negro { 
+    background: #1C2833 
   }
-
-  .rojo.light {
-    background: #ff0037;
+  .negro.light { 
+    background:  #34495E;
   }
-
-  .verde {
-    background: #2d8d04;
+  .amarillo { 
+    background: #ffd900;
   }
-
-  .verde.light {
-    background: #badc58;
+  .amarillo.light { 
+    background: #fbff05;
   }
-
-  .btn-start {
-    width: 400px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 2.5rem;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
+  .naranja { 
+    background: #b84900 
+  }
+  .naranja.light { 
+    background: #f06204;
+  }
+  .gris { 
+    background: #515A5A;
+  }
+  .gris.light { 
+    background: #B2BABB;
+  }
+  .morado { 
+    background: #690092;
+  }
+  .morado.light { 
+    background: #b404ff;
+  }
+  .oro { 
+    background:  #9C640C;
+  }
+  .oro.light { 
+    background: #F39C12;
+  }
+  
+  .btn-start { 
+    background: none;
+    width: 200px;
+    max-width: 100%;
+    border: none;
+    padding-bottom: 7%;
+    margin-top: 3%;
+    outline: none;
   }
 
   .hide {
-    display: none;
-
+    visibility: hidden;
+    outline: none;
   }
+  
+
   *{
     font-family: "Comic Sans MS", cursive, sans-serif;
   }
